@@ -45,7 +45,7 @@
                         <div class="input-group number-spinner">
                            <button id="case-decrease"  class="btn btn-default"><i class="fas fa-minus"></i></button>
                            <input id="case-count" type="text" class="form-control text-center" value="1">
-                           <button id="case-increase" class="btn btn-default"><i class="fas fa-plus"></i></button>
+                           <button onclick="handleProductChange(true)" class="btn btn-default"><i class="fas fa-plus"></i></button>
 
                         </div>
                         <h5 id='case-total'>$59</h5>
@@ -78,12 +78,7 @@
       </div>
    </section>
 
-   <script>
-      document.getElementById('case-increase').addEventListener('click', function(){
-         handleProductChange(true);
-
-       })
-       
+   <script>     
        document.getElementById('case-decrease').addEventListener('click', function(){
          handleProductChange(false);
        })
